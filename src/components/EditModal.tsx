@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
 import { Button, Modal, TextInput, View } from "react-native";
-import { usePatchPost, useUpdatePost } from "../hooks/usePosts";
+import {
+  usePatchPost,
+  useUpdatePost,
+} from "../hooks/usePosts";
 
-export default function EditModal({
-  post,
-  onClose,
-}: {
-  post: any;
-  onClose: () => void;
-}) {
+export default function EditModal({ post, onClose }: any) {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 

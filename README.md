@@ -103,3 +103,4 @@ npx expo start
 ---
 
 ## Youtube
+https://www.youtube.com/watch?v=FyFs04uiF58

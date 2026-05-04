@@ -13,10 +13,12 @@ export default function PostList({ userId, onEdit }: any) {
       keyExtractor={(item: any) => item.id.toString()}
       renderItem={({ item }) => (
         <View style={{ padding: 10, borderWidth: 1, marginBottom: 5 }}>
+          <Text>ID: {item.id}</Text>
           <Text>{item.title}</Text>
           <Text>{item.body}</Text>
 
           <Button title="Edit" onPress={() => onEdit(item)} />
+
           <Button
             title="Delete"
             onPress={() => del.mutate(item.id)}

@@ -1,10 +1,6 @@
 import { TextInput } from "react-native";
 
-export default function FilterBar({
-  setUserId,
-}: {
-  setUserId: (id?: number) => void;
-}) {
+export default function FilterBar({ setUserId }: any) {
   return (
     <TextInput
       placeholder="Filter by User ID"

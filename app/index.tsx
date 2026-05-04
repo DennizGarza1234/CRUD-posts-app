@@ -12,9 +12,7 @@ export default function Index() {
 
   return (
     <View style={{ padding: 20, flex: 1 }}>
-      <Text style={{ fontSize: 22, marginBottom: 10 }}>
-        CRUD Posts App
-      </Text>
+      <Text style={{ fontSize: 22 }}>CRUD Posts App</Text>
 
       <FilterBar setUserId={setUserId} />
 

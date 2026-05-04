@@ -27,7 +27,11 @@ export default function PostForm() {
       <Button
         title="Create Post"
         onPress={() =>
-          createPost.mutate({ title, body, userId: 1 })
+          createPost.mutate({
+            title,
+            body,
+            userId: 1,
+          })
         }
       />
     </View>
